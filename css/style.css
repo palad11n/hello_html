@@ -1,3 +1,5 @@
+/*CSS reset*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,7 +43,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*CSS reset end*/
 
 .logo{
 	display:inline;
@@ -65,24 +67,28 @@ table {
 
 .top{
 	min-width:1170px;
+	min-height: 60px;
 	margin: 0 auto;
 	background:radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
 }
 .top__text-color{
-	color:#A9C5E0;
+	padding: 20px;
+	color:#A9CdE0;
 }
 .header-right{
-float:right;
+	padding-right: 20px;
+	float:right;
 }
 .header-left{
-	
-float:left;
+	padding-right: 20px;
+	float:left;
 }
 .clear{
 	clear:both;
 }
 .phone{
 	display:inline-block;
+	margin: 0 30px;
 }
 .enter{
 	text-decoration: none;
@@ -90,13 +96,14 @@ float:left;
 	border: 1px solid #E5E31F;
 	
 	border-radius:10px;
-	padding:15px 25px;
+	padding:15px 50px;
 }
 
 .divider{
 	position:absolute;
 	width:1px;
 	height:14px;
+	margin: 0 -15%;
 	background:#A9C5E0;
 	
 }
