@@ -66,7 +66,6 @@ table {
 }
 
 .top{
-	min-width:1170px;
 	min-height: 60px;
 	margin: 0 auto;
 	background:radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
@@ -156,7 +155,7 @@ table {
 }
 .first-info-slider {
 	position: relative;
-	width: 660px;
+	width: 560px;
 	height: 128px;
 	left: 135px;
 	top: 262px;
@@ -167,10 +166,11 @@ table {
 }
 .second-info-slider {
 	position: relative;
-	width: 660px;
+	width: 560px;
 	height: 48px;
 	left: 135px;
 	top: 300px;
+	font-weight: bold;
 	font-size: 16px;
 	color: #FFFFFF;
 	font-family: Proxima Nova;
@@ -178,6 +178,9 @@ table {
 .info-slider {
 	font-family: Proxima Nova;
 	color: #FFFFFF;
+}
+.img-slider {
+	margin: -39px;
 }
 
 #nav-btns {
@@ -187,17 +190,20 @@ table {
 	padding: 0;
 	margin: 0;
 	text-align: center;
+
 }
 
 .slide-nav-btn {
 	position: relative;
 	display: inline-block;
-	list-style: none;
 	width: 14px;
 	height: 14px;
 	background-color: #fff;
 	border-radius: 10%;
 	margin: 3px;
+	border: 3px solid #264160;
+	border-radius: 10px;
+	background: #346491;
 }
 
 .slide-nav-btn:hover {
@@ -211,7 +217,7 @@ aside,
 footer {
 	margin: 0 1.5% 24px 1.5%;
 }
-section {
+section.feature {
 	display: inline-block;
 	width: 30%;
 }
@@ -219,16 +225,16 @@ footer {
 	margin-bottom: 0;
 }
 
-h3.title-feature {
+.title-feature h3{
 	text-align: center;
 	font-family: Proxima Nova;
 	font-size: 20px;
 	margin-top: 30px;
-    margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 
-img.img-feature {
+.img-feature img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -245,11 +251,67 @@ img.img-feature {
 
 }
 
-div.info-main p{
+.infoOfCompany section{
+	display: inline-block;
+	width: 30%;
+}
+
+.info-main div p{
 	text-align: center;
 }
 
 .features {
 	/*position: relative;*/
 	text-align: center;
+}
+
+/*footer*/
+
+#footer {
+	background-color: #23415E;
+	margin-top: 5%;
+	height: 320px;
+	padding-top: 100px;
+}
+
+.footerIMG {
+	float: left;
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+.infoOfCompany {
+	position: relative;
+	display: inline-block; 
+	vertical-align: top;
+	width: 150px;
+}
+
+.infoOfCompany a{
+	font-family: Proxima Nova;
+	font-size: 15px;
+	line-height: 36px;
+	color: #FFFFFF;
+}
+.vcard {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	width: 200px;
+	float: right;
+}
+.vcard ul{
+	margin: 10px;
+}
+.vcard li{
+	font-family: Proxima Nova;
+	font-size: 15px;
+	line-height: 19px;
+	color: #A9C5E0;
+	list-style-type: none;
+}
+
+.footerInfo {
+	display: block;
 }

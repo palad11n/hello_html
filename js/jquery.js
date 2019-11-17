@@ -24,7 +24,9 @@ $(document).ready(function() {
                 '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
                 '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
             });
+            $('#butImg' + slideNow).attr("src","");
             slideNow = navBtnId + 1;
+            $('#butImg' + slideNow).attr("src","images/Rectangle 2.png");
         }
     });
 });
@@ -32,14 +34,18 @@ $(document).ready(function() {
 function nextSlide() {
     if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
         $('.slidewrapper').css('transform', 'translate(0, 0)');
+        $('#butImg' + slideNow).attr("src","");
         slideNow = 1;
+        $('#butImg' + slideNow).attr("src","images/Rectangle 2.png");
+        
     } else {
         translateWidth = -$('.viewport').width() * (slideNow);
         $('.slidewrapper').css({
-            'transform': 'translate(' + translateWidth + 'px, 0)',
-            '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
-            '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
+            'transform': 'translate(' + translateWidth + 'px, 0)'
         });
+       
+        $('#butImg' + slideNow).attr("src","");
         slideNow++;
+        $('#butImg' + slideNow).attr("src","images/Rectangle 2.png");
     }
 }

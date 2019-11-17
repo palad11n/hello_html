@@ -9,7 +9,7 @@
 </head>
 <body> 
 	<div class="top">
-		<header class="content top__text-color" >
+		<header class="top__text-color" >
 			<div class ="header-left">
 				<div style="display:inline">
 					<div class="logo">
@@ -44,10 +44,11 @@
 							<div class="second-info-slider">	
 								<span>Для тех, кто не может ждать у нас есть услуга срочной курьерской доставки корреспондеции и других видов отправлений.</span>
 							</div>
+
 							<div class="img-slider">
 								<img src="images/s1.png" alt="car" class="slide-img">
 							</div>
-							<a class = "devilery" href="">Заказать доставку</a>
+							<a class="devilery" href="#100">Заказать доставку</a>
 						</li>	
 
 						<li class="info-slider">
@@ -57,19 +58,18 @@
 							<div class="second-info-slider">	
 								<p>В течение часа наш курьер заберет вашу посылку и подпишет с Вами договор о предоставлении услуг.</p>
 							</div>
-							<a class = "devilery" href="">Заказать доставку</a>
+							
 							<div class="img-slider">	
 								<img src="images/s2.png" alt="doc"  class="slide-img">
-
 							</div>
+							<a class="devilery1" href="#100">Заказать доставку</a>
 						</li>	
-
 					</ul>
 					
 
 					<ul id="nav-btns">
-						<li class="slide-nav-btn"></li>
-						<li class="slide-nav-btn"></li>
+						<li class="slide-nav-btn"><img id="butImg1" src="images\Rectangle 2.png"></li>
+						<li class="slide-nav-btn"><img id="butImg2" src=""></li>
 					</ul>
 				</div>
 			</div>
@@ -108,26 +108,32 @@
 	</div>
 	<div id="footer">
 		<footer>
-			<aside>
-				<img src="images/target.svg" alt="target">
-				<img src="images/name.svg" alt="name"  >
-			</aside>
-			<aside>
-				<a href="#" >О компании</a> 
-				<a href="#" >Вакансии </a>
-				<a href="#" >Клиенту</a> 
-				<a href="#" >Франчайзинг</a>
-			</aside>
-			<aside>
-				<a href="#" >Доставка из Китая</a> 
-				<a href="#" >Все услуги</a> 
-				<a href="#" >Акции</a>
-			</aside>
-			<aside>
-				<span>manager@uexpress.ru 115221, г. Челябинск, ул. Северная, д. 29-в Мы работаем по 24 часа 5 дней в неделю</span>
-			</aside>
-		</footer>
-	</div>
-	<script src="js/jquery.js"></script>
-</body>
-</html>
+			<section class="footerIMG">
+				<p>
+					<img src="images/target.svg" alt="target">
+					<img src="images/name.svg" alt="name">
+				</p>
+			</section>
+			<div class="footerInfo">
+				<section class="infoOfCompany">
+					<a href="#1" >О компании</a> 
+					<br><a href="#2" >Вакансии </a>
+					<br><a href="#3" >Клиенту</a> 
+					<br><a href="#4" >Франчайзинг</a>
+				</section>
+				<section class="infoOfCompany">
+					<a href="#5" >Доставка из Китая</a> 
+					<br><a href="#6" >Все услуги</a> 
+					<br><a href="#7" >Акции</a>
+				</section>
+				<section class="vcard">
+					<ul >
+						<li class="emailComp">manager@uexpress.ru</li> 
+						<li class="address">115221, г. Челябинск, ул. Северная, д. 29-в</li> 
+						<li>Мы работаем по 24 часа 5 дней в неделю</li>
+					</ul></section></div>
+				</footer>
+			</div>
+			<script src="js/jquery.js"></script>
+		</body>
+		</html>
