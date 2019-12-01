@@ -29,6 +29,17 @@ $(document).ready(function() {
             $('#butImg' + slideNow).attr("src","images/Rectangle 2.png");
         }
     });
+
+    $('.enter').click(function() {
+        $('.darkBackground').toggleClass("block");
+        $('.authorization').show(500);
+
+    });
+
+    $('.authoClose').click(function() {
+         $('.darkBackground').toggleClass("block");
+        $('.authorization').hide(500);
+    });
 });
 
 function nextSlide() {
@@ -43,7 +54,7 @@ function nextSlide() {
         $('.slidewrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)'
         });
-       
+
         $('#butImg' + slideNow).attr("src","");
         slideNow++;
         $('#butImg' + slideNow).attr("src","images/Rectangle 2.png");

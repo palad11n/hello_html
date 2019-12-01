@@ -118,6 +118,7 @@ table {
 	margin-top: 100px;
 	display: inline-flex;
 }
+
 .block-for-slider {
 	margin: 0 auto;
 }
@@ -159,13 +160,11 @@ table {
 
 .right-info-sl{
 /*	float: right; 
-	position: absolute;*/
-	/*margin: 160px 800px;*/
+position: absolute;*/
+/*margin: 160px 800px;*/
 }
 
-
 .slide-img {
-
 }
 .first-info-slider {
 	display: block;
@@ -216,6 +215,88 @@ table {
 }/* срабатывает по наведению курсора на элемент, 
 в основном применяется для создания красивого эффекта при наведении на ссылки. */
 
+.authorization {
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	width: 560px;
+	height: 470px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	display: none;
+	z-index:150;
+}
+.placeholder{
+	/*text-align: center;*/
+	padding-left: 20px;
+	width: 360px;
+	height: 40px;
+	border-radius: 6px;
+	margin-top: 1px;
+}
+
+.signIn {
+	text-decoration: none;
+	color: #2A4F71;
+	background: #E5E31F;
+	border-radius:10px;
+	padding:10px 170px;
+	margin-top: 50px;
+	display: inline-flex;
+
+}
+.authoClose {
+	position: absolute;
+	margin: 20px 0 0 510px;
+}
+
+.authoTitle {
+	margin-top: 60px;
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 38px;
+	line-height: 46px;
+	width: 430px;
+	margin-left: 100px;
+}
+
+.authoComment{
+	margin-top: 18px;
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	width: 430px;
+	margin-left: 100px;
+
+}
+#slick-login{
+	margin-left: 100px;
+	margin-top: 50px;
+	width: 420px;
+	height: 100px;
+
+}
+
+.authoClose:hover {
+	cursor: pointer;
+}
+.block{
+	display:block  !important ;
+}
+.darkBackground {
+	display:none;
+	position: fixed;
+	z-index: 150;
+	height:100%;
+	width:100%;
+	margin:0 auto;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/*----*/
 header,
 section,
 aside,
