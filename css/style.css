@@ -64,14 +64,22 @@ table {
 	vertical-align: middle;
 	margin: 0px 60px;
 }
+.positionTopItems{
+	align-items: center;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+
+
+}
 
 .top{
-	min-height: 60px;
+	min-height: 90px;
 	margin: 0 auto;
 	background:radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
 }
 .top__text-color{
-	padding: 20px;
+	padding: 20px 0 0 0;
 	color:#A9CdE0;
 }
 .header-right{
@@ -128,6 +136,7 @@ table {
 	overflow: hidden;
 }
 .slidewrapper {
+	height: 614px;
 	width: calc(100% * 2);
 	margin: 0;
 	padding: 0;
@@ -294,6 +303,107 @@ position: absolute;*/
 	width:100%;
 	margin:0 auto;
 	background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*
+добавить новость
+*/
+
+#slick-news {
+	margin-left: 150px;
+	margin-top: 50px;
+	width: 700px;
+	height: 600px;
+	margin-bottom: 100px;
+}
+.textMaxWForNews{
+	max-width: 700px;
+}
+
+.newsTitle {
+	margin-top: 150px;
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 50px;
+	line-height: 46px;
+	width: 430px;
+
+}
+
+.newsComment {
+	margin-top: 25px;
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.placeholderNews {
+	padding-top: 20px;
+	padding-left: 15px;
+	width: 770px;
+	height: 144px;
+	border-radius: 6px;
+	margin-top: 60px;
+	font-family: Proxima Nova;
+font-size: 20px;
+resize: none;
+
+}
+
+textarea[type="text"]::placeholder {
+	 color:  #D0C9D6;
+	 /*color: #FF2323;*/
+}
+
+.inputImg {
+	margin-top: 20px;
+}
+
+.countSymbols{
+	font-family: Proxima Nova;
+	font-size: 12px;
+	line-height: 20px;
+	color: #D0C9D6;
+	text-align: right;
+	width: 788px;
+}
+
+.imgNewsText {
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	/*line-height: 24px;*/
+	margin-left: 30px;
+	color:#23415E;
+	display: block;
+}
+#addFile {
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.imgNewsText:hover {
+	cursor: pointer;
+}
+
+.imgNews {
+	position: absolute;
+}
+
+.addNewsBtn {
+	text-decoration: none;
+	color: #2A4F71;
+	background: #E5E31F;
+	border-radius:10px;
+	padding:15px 90px;
+	margin-top: 120px;
+	display: inline-flex;
 }
 
 /*----*/
