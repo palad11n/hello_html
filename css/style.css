@@ -45,8 +45,10 @@ table {
 }
 /*CSS reset end*/
 
+@import url("../fonts/stylesheet.css")
+
 .logo{
-	display:inline;
+	display: flex;
 	vertical-align: middle;
 }
 .content{
@@ -225,9 +227,9 @@ position: absolute;*/
 в основном применяется для создания красивого эффекта при наведении на ссылки. */
 
 .authorization {
-	position: absolute;
+	position: fixed;
 	left: 30%;
-	top: 50%;
+	top: calc(100vh / 4);
 	width: 560px;
 	height: 470px;
 	background: #FFFFFF;
@@ -292,9 +294,11 @@ position: absolute;*/
 .authoClose:hover {
 	cursor: pointer;
 }
+
 .block{
 	display:block  !important ;
 }
+
 .darkBackground {
 	display:none;
 	position: fixed;
@@ -349,18 +353,30 @@ position: absolute;*/
 	border-radius: 6px;
 	margin-top: 60px;
 	font-family: Proxima Nova;
-font-size: 20px;
-resize: none;
+	font-size: 20px;
+	resize: none;
 
 }
-
-textarea[type="text"]::placeholder {
-	 color:  #D0C9D6;
-	 /*color: #FF2323;*/
+.redColorTextarea[type="text"]::placeholder{
+	color: #FF2323;
+	opacity: 1;
 }
 
+.previewIMG{
+	display: flex;
+}
 .inputImg {
 	margin-top: 20px;
+	display: flex;
+}
+
+#preview {
+	margin-left: 50px;
+	margin-top: -5px;
+}
+
+#previewName {
+	margin-left: 35px;
 }
 
 .countSymbols{
@@ -370,6 +386,18 @@ textarea[type="text"]::placeholder {
 	color: #D0C9D6;
 	text-align: right;
 	width: 788px;
+}
+
+.imgClose:hover {
+	cursor: pointer;
+}
+
+.imgClose {
+	margin-left: 5px;
+	width: 18px;
+	height: 18px;
+	opacity: 0;
+	overflow: hidden;
 }
 
 .imgNewsText {
@@ -394,6 +422,12 @@ textarea[type="text"]::placeholder {
 
 .imgNews {
 	position: absolute;
+}
+
+.addNewsBtn:hover{
+	cursor: pointer;
+	background: #2A4F71;
+	color:#E5E31F;
 }
 
 .addNewsBtn {

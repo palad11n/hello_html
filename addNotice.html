@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>UXEPRESS Добавление новости</title>
+	<title>Добавление новости | UXEPRESS</title>
 	<script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
-
-	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
@@ -18,7 +16,7 @@
 		<header class="top__text-color" >
 			<div class="positionTopItems">
 				<div class ="header-left">
-					<div style="display:inline">
+					<div style="display: flex;">
 						<div class="logo">
 							<img src="images/target.svg" alt="target">
 							<img src="images/name.svg" alt="name">
@@ -42,52 +40,57 @@
 			<form id="slick-news">
 				<div class="textMaxWForNews">
 					<div class="newsTitle">Добавить новость</div>
-					<div class="newsComment">Введите текст новости, а также изображение (размер 270х270px)</div>
+					<div class="newsComment">Введите текст новости, а также приложите изображение (размер: 270х270px, формат JPG,PNG)</div>
 				</div>
 				<textarea type="text" name="inputNews" class="placeholderNews" placeholder="Введите текст новости"></textarea>
 				<p class="countSymbols">Символов: <span id="counter">150</span>/<span id="maxSymbols">150</span></p>
 				<div class="inputImg">
 					<img src="images/ShapeimgIco.svg" alt="not img" class="imgNews">
-					<!-- <div class="imgNewsText">+ Добавить изображение</div> -->
 					<label for="addFile" class="imgNewsText">+ Добавить изображение</label>
-					<input type="file" id="addFile" name="upload_file" size="50"
-					accept=".jpg, .jpeg" >
-					<a class="addNewsBtn" href="#300">Применить</a>
-
-
-				</form>
-			</main>
-
-
-			<div id="footer">
-				<footer>
-					<section class="footerIMG">
-						<p>
-							<img src="images/target.svg" alt="target">
-							<img src="images/name.svg" alt="name">
-						</p>
-					</section>
-					<div class="footerInfo">
-						<section class="infoOfCompany">
-							<a href="#1" >О компании</a> 
-							<br><a href="#2" >Вакансии </a>
-							<br><a href="#3" >Клиенту</a> 
-							<br><a href="#4" >Франчайзинг</a>
-						</section>
-						<section class="infoOfCompany">
-							<a href="#5" >Доставка из Китая</a> 
-							<br><a href="#6" >Все услуги</a> 
-							<br><a href="#7" >Акции</a>
-						</section>
-						<section class="vcard">
-							<ul >
-								<li class="emailComp">manager@uexpress.ru</li> 
-								<li class="address">115221, г. Челябинск, ул. Северная, д. 29-в</li> 
-								<li>Мы работаем по 24 часа 5 дней в неделю</li>
-							</ul></section></div>
-						</footer>
+					<input id="addFile" type="file" name="upload_file"
+					accept=".jpg, .jpeg" onchange="uploadMiniImg(this)" multiple>
+					<div class="previewIMG">
+						<div id="preview"></div>
+						<div id="previewName"></div>
+						<img src="images/Shape.svg" alt="close" class="imgClose">
 					</div>
+				</div>	
 
-					<script src="js/jquery.js"></script>
-				</body>
-				</html>
+				
+
+				<a class="addNewsBtn" href="#300">Применить</a>
+			</form>
+		</main>
+
+		<div id="footer">
+			<footer>
+				<section class="footerIMG">
+					<p>
+						<img src="images/target.svg" alt="target">
+						<img src="images/name.svg" alt="name">
+					</p>
+				</section>
+				<div class="footerInfo">
+					<section class="infoOfCompany">
+						<a href="#1" >О компании</a> 
+						<br><a href="#2" >Вакансии </a>
+						<br><a href="#3" >Клиенту</a> 
+						<br><a href="#4" >Франчайзинг</a>
+					</section>
+					<section class="infoOfCompany">
+						<a href="#5" >Доставка из Китая</a> 
+						<br><a href="#6" >Все услуги</a> 
+						<br><a href="#7" >Акции</a>
+					</section>
+					<section class="vcard">
+						<ul >
+							<li class="emailComp">manager@uexpress.ru</li> 
+							<li class="address">115221, г. Челябинск, ул. Северная, д. 29-в</li> 
+							<li>Мы работаем по 24 часа 5 дней в неделю</li>
+						</ul></section></div>
+					</footer>
+				</div>
+
+				<script src="js/jquery.js"></script>
+			</body>
+			</html>
