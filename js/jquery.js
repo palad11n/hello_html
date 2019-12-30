@@ -8,10 +8,21 @@ var slideWidth=-$(window).width();//-1424 0
 var translateWidth = -$('.viewport').width();
 
 $(document).ready(function() {
-   var switchInterval = setInterval(nextSlide, interval);
-   sliderTimer=setInterval(nextSlide,interval);
-   $('.viewport').hover(function(){
-    clearInterval(sliderTimer);
+//    var switchInterval = setInterval(nextSlide, interval);
+//    sliderTimer=setInterval(nextSlide,interval);
+//    $('.viewport').hover(function(){
+//     clearInterval(sliderTimer);
+// });
+    $('.slidewrapper').slick({
+
+  slidesToShow: 1,
+
+  slidesToScroll: 1,
+
+  autoplay: true,
+
+  autoplaySpeed: 2000,
+
 });
 
    $('.slide-nav-btn').click(function() {

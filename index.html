@@ -5,7 +5,8 @@
 	<title>Курьерская служба доставки | UXEPRESS</title>
 	<script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body> 
 
@@ -34,8 +35,8 @@
 
 			<div class="content block-for-slider">
 				<div class="viewport">
-					<ul class="slidewrapper" data-current=0>
-						<li class="info-slider">
+					<div class="slidewrapper" data-current=0>
+						<div class="info-slider">
 							<div class="left-info-sl">
 								<div class="first-info-slider">Срочная доставка день в день</div>
 								<div class="second-info-slider">Для тех, кто не может ждать у нас есть услуга срочной курьерской доставки корреспондеции и других видов отправлений.</div>
@@ -47,33 +48,33 @@
 									<img src="images/s1.png" alt="car" class="slide-img">
 								</div>
 							</div>
-						</li>
-						<li class="info-slider" style="
-						position: absolute; 
-						height: inherit;">
+						</div>
+						<div class="info-slider" style="
+						">
 						<div class="left-info-sl">
 							<div class="first-info-slider">	Подписание договора за 1 час</div>
 							<div class="second-info-slider">В течение часа наш курьер заберет вашу посылку и подпишет с Вами договор о предоставлении услуг.</div>
 							<a class="devilery" href="#100">Заказать доставку</a>
 						</div>
-						<div class="right-info-sl" style="position: relative;
-						width: 300px;
-						height: inherit;    display: inline-block;float: left;">
+						<div class="right-info-sl" style="">
+							<!--position: relative;
+							width: 300px;
+							height: inherit;    display: inline-block;float: left;-->
 							<div class="img-slider" style="position: absolute;
-							bottom: 0; ">	
+							bottom: 0; ">
 							<img src="images/s2.png" alt="doc"  class="slide-img">
-							</div>
 						</div>
-						</li>	
-					</ul>
+					</div>
+				</div>	
+			</div>
 
 
-					<ul id="nav-btns">
-						<li class="slide-nav-btn"><img id="butImg1" src="images\Rectangle 2.png"></li>
-						<li class="slide-nav-btn"><img id="butImg2" src=""></li>
-					</ul>
-				</div>
-</div>
+			<ul id="nav-btns">
+				<li class="slide-nav-btn"><img id="butImg1" src="images\Rectangle 2.png"></li>
+				<li class="slide-nav-btn"><img id="butImg2" src=""></li>
+			</ul>
+		</div>
+	</div>
 </header>
 </div>
 
@@ -151,6 +152,9 @@
 				</ul></section></div>
 			</footer>
 		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script src="js/jquery.js"></script>
 
 	</body>
