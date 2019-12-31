@@ -478,12 +478,12 @@ footer {
 	margin-bottom: 0;
 }
 
-.title-feature h3{
+.title-feature {
 	text-align: center;
-	/*font-family: 'Proxima Nova Bl';*/
 	font-size: 20px;
 	margin-top: 30px;
 	margin-bottom: 24px;
+	font-weight: bold;
 }
 
 
@@ -566,6 +566,7 @@ footer {
 	line-height: 19px;
 	color: #A9C5E0;
 	list-style-type: none;
+	padding: 5% 2%;
 }
 
 .footerInfo {
