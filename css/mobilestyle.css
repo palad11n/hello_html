@@ -1,0 +1,168 @@
+@media (max-width: 768px){
+	.phone{
+		position: absolute;
+		display:inline-block;
+		margin: 70px 0 0 40px;
+	}
+
+	.header-left{
+		padding-left: 15px;
+	}
+
+	.left-info-sl {
+		margin: 170px 100px 0 15px;
+	}
+
+	.img-slider{
+		opacity:0;
+	}
+
+	.enter{
+		padding:15px 70px;
+	}
+
+	/*main*/
+
+	.authorization {
+		left: 15%;
+	}
+
+
+	section.feature {
+		width: 46%;
+		height: 250px;
+		margin: 14px;
+	}
+
+
+	/*footer*/
+
+	#footer {
+		height: 500px;
+	}
+
+	.footerIMG {
+		float: left;
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-right: 100px;
+	}
+
+	.vcard {
+		margin-top: 90px;
+		margin-left: 220px;
+		float: left;
+	}
+
+	.vcard ul {
+		margin: 0px;
+	}
+}
+
+
+@media (max-width: 425px){
+
+	.top__text-color {
+		padding: 50px 0 0 0;
+	}
+	.phone{
+		opacity:0;
+	}
+
+	.courier{
+		display: none;
+		opacity:0;
+	}
+
+	.header-left{
+		padding-left: 15px;
+	}
+
+	.left-info-sl {
+		margin: 170px 100px 0 0px;
+		max-width: 360px;
+	}
+
+	.img-slider{
+		opacity:0;
+	}
+
+	.first-info-slider {
+		font-size: 38px;
+	}
+
+	.devilery {
+		margin-top: 90px;
+		padding: 15px 100px;
+	}
+
+
+	.enter{
+		padding:15px 70px;
+	}
+
+	/*main*/
+
+	.authorization {
+		left: 0%;
+		border-radius: 0px;
+		top: 0px;
+		height: 100%;
+		width: 100%
+	}
+
+	.authoClose{
+		margin: 40px 0 0 90%;
+	}
+	.authoTitle{
+		margin-top: 50%;
+		margin-left: 15px;
+	}
+
+	.authoComment{
+		margin-left: 15px;
+		width: 90%;
+	}
+
+	#slick-login{
+		margin-left: 15px;
+		width: auto;
+
+	}
+	.placeholder{
+		padding-left: 10px;
+		width: 90%;
+	}
+
+	.signIn{
+		padding: 15px 148px;
+	}
+
+	.title-main {
+		font-size: 28px;
+	}
+
+	section.feature {
+		width: 93%;
+		height: 200px;
+	}
+	.features {
+		padding-bottom: 60px;
+	}
+
+
+	/*footer*/
+
+	.infoOfCompany {
+		margin-top: 60px;
+	}
+
+	.vcard {
+		margin-top: 50px;
+		margin-left: 0px;
+	}
+
+	.vcard ul {
+		margin: 0px;
+	}
+}
