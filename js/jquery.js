@@ -21,8 +21,3 @@ $(document).ready(function() {
 
 
 });
-
-function u() {
-    //debugger;
-   
-}

@@ -52,7 +52,9 @@ function uploadMiniImg(img) {
     if(!/\.(jpg|png|jpeg)$/.test(fls[0].name)){
       doc.innerHTML = "Неверный формат изображения";
       $('#previewName').css({"color":" #FF2323",
-        "font-weight": "600",});
+        "font-weight": "600",
+        "margin-left" : "0",
+        "margin-right": "0"});
       return;
     }
     $('#previewName').css({"color":" #000",});
@@ -73,6 +75,7 @@ function uploadMiniImg(img) {
      fr.readAsDataURL(fls[0]);
      var doc = document.getElementById('previewName');
      doc.innerHTML = fls[0].name;
-     $('#previewName').css({"font-weight": "100",});
+     $('#previewName').css({"font-weight": "100",
+      "margin-left" : "35"});
      $('.imgClose').css({"opacity": '1'});
    }
