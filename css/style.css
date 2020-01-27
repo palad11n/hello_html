@@ -134,15 +134,23 @@ table {
 /*header is norm. end*/
 
 .devilery{
+	outline: none;
 	font-weight: bold;
 	text-decoration: none;
 	color: #2A4F71;
 	background: #E5E31F;
 	border-radius:10px;
-	padding:10px 70px;
+	padding:15px 80px;
 	margin-top: 100px;
 	display: inline-flex;
 }
+.devilery:focus{
+	border-radius:10px;
+	border: 1px solid #E5E31F;
+	color: #E5E31F;
+	background: #2A4F71;
+}
+
 
 .block-for-slider {
 	margin: 0 auto;
@@ -216,83 +224,70 @@ table {
 .img-slider {
 	margin: 0;
 }
-/*
-#nav-btns {
+
+.authorization {
+	position: fixed;
+	left: 30%;
+	top: calc(100vh / 4);
+	width: 560px;
+	height: 470px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	display: none;
+	z-index:150;
+	font-family: 'Proxima Nova Rg';
+}
+.placeholder{
+	/*text-align: center;*/
+	outline: none;
+	padding-left: 20px;
+	width: 380px;
+	height: 40px;
+	border-radius: 6px;
+	margin-top: 8px;
+	border: 1px solid #000000;
+	font-size: 15px;
+	font-family: 'Proxima Nova Rg';
+
+}
+.placeholder:focus {
+	border-radius: 6px;
+	/*border: 1px solid #FF0000;  Рамка при получении фокуса */
+	border-color: #FF0000;
+	box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.1), 0 0 6px #FF0000;
+}
+
+.signIn {
+	text-decoration: none;
+	color: #2A4F71;
+	background: #E5E31F;
+	border: 2px solid #E5E31F;
+	border-radius:10px;
+	padding:10px 180px;
+	margin-top: 30px;
+	display: inline-flex;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Proxima Nova Rg';
+}
+
+.authoClose {
 	position: absolute;
-	width: 100%;
-	bottom: 20px;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-
+	margin: 20px 0 0 510px;
 }
 
-.slide-nav-btn {
-	position: relative;
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	background-color: #fff;
-	border-radius: 10%;
-	margin: 3px;
-	border: 3px solid #264160;
-	border-radius: 10px;
-	background: #346491;
+.authoTitle {
+	margin-top: 60px;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 38px;
+	line-height: 46px;
+	width: 430px;
+	margin-left: 90px;
 }
 
-.slide-nav-btn:hover {
-	cursor: pointer;
-	}*/
-
-	.authorization {
-		position: fixed;
-		left: 30%;
-		top: calc(100vh / 4);
-		width: 560px;
-		height: 470px;
-		background: #FFFFFF;
-		border-radius: 6px;
-		display: none;
-		z-index:150;
-	}
-	.placeholder{
-		/*text-align: center;*/
-		padding-left: 20px;
-		width: 380px;
-		height: 40px;
-		border-radius: 6px;
-		margin-top: 1px;
-	}
-
-	.signIn {
-		text-decoration: none;
-		color: #2A4F71;
-		background: #E5E31F;
-		border-radius:10px;
-		padding:10px 180px;
-		margin-top: 50px;
-		display: inline-flex;
-		font-weight: bold;
-
-	}
-	.authoClose {
-		position: absolute;
-		margin: 20px 0 0 510px;
-	}
-
-	.authoTitle {
-		margin-top: 60px;
-		font-family: 'Proxima Nova Th';
-		font-weight: bold;
-		font-style: normal;
-		font-size: 38px;
-		line-height: 46px;
-		width: 430px;
-		margin-left: 90px;
-	}
-
-	.authoComment{
-		margin-top: 18px;
+.authoComment{
+	margin-top: 18px;
 	/*font-family: 'Proxima Nova Bl';
 	font-style: normal;
 	font-weight: normal;*/
@@ -302,9 +297,10 @@ table {
 	margin-left: 90px;
 
 }
+
 #slick-login{
 	margin-left: 90px;
-	margin-top: 50px;
+	margin-top: 30px;
 	width: 420px;
 	height: 100px;
 
@@ -346,7 +342,7 @@ table {
 
 .newsTitle {
 	margin-top: 150px;
-	/*font-family: 'Proxima Nova Bl';
+	/*
 	font-style: normal;
 	font-weight: 800;*/
 	font-weight: bold;
@@ -358,25 +354,30 @@ table {
 
 .newsComment {
 	margin-top: 25px;
-/*	font-family: 'Proxima Nova Bl';
-	font-style: normal;
-	font-weight: normal;*/
+	font-family: 'Proxima Nova Rg';
 	font-size: 18px;
 	line-height: 24px;
 }
 
 .placeholderNews {
+	outline: none;
 	padding-top: 20px;
 	padding-left: 15px;
 	width: 770px;
 	height: 144px;
 	border-radius: 6px;
 	margin-top: 60px;
-	/*font-family: 'Proxima Nova Bl';*/
 	font-size: 20px;
 	resize: none;
-
+	font-family: 'Proxima Nova Rg';
 }
+
+.placeholderNews:focus{
+	border-radius: 6px;
+	border-color: #2A4F71;
+	box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.1), 0 0 6px #2A4F71;
+}
+
 .redColorTextarea[type="text"]::placeholder{
 	color: #FF2323;
 	opacity: 1;
@@ -384,6 +385,7 @@ table {
 
 .previewIMG{
 	display: flex;
+	font-family: 'Proxima Nova Rg';
 }
 .inputImg {
 	margin-top: 20px;
@@ -392,11 +394,11 @@ table {
 
 #preview {
 	margin-left: 50px;
-	margin-top: -5px;
+	margin-top: -7px;
 }
 
 #previewName {
-	margin-left: 35px;
+	margin-left: 20px;
 }
 
 .countSymbols{
@@ -413,7 +415,7 @@ table {
 }
 
 .imgClose {
-	margin-left: 5px;
+	margin-left: 20px;
 	width: 18px;
 	height: 18px;
 	opacity: 0;
@@ -452,6 +454,7 @@ display: block;
 }
 
 .addNewsBtn {
+	outline: none;
 	text-decoration: none;
 	color: #2A4F71;
 	background: #E5E31F;
@@ -461,6 +464,9 @@ display: block;
 	display: inline-flex;
 	font-style: normal;
 	font-weight: 600;
+	border: 2px solid #E5E31F;
+	font-size: 18px;
+	font-family: 'Proxima Nova Th';
 }
 
 /*----*/
@@ -535,11 +541,19 @@ footer {
 	padding-right: 100px;
 }
 
-.infoOfCompany {
+.lists_links{
 	position: relative;
-	display: inline-block; 
+	display: inline-flex;
+
+}
+
+.infoOfCompany {
 	vertical-align: top;
 	width: 170px;
+}
+
+.link{
+	text-decoration: none;
 }
 
 .infoOfCompany a{

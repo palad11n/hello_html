@@ -40,7 +40,7 @@
 					<div class="newsTitle">Добавить новость</div>
 					<div class="newsComment">Введите текст новости, а также приложите изображение (размер: 270х270px, формат JPG,PNG)</div>
 				</div>
-				<textarea type="text" name="inputNews" class="placeholderNews" placeholder="Введите текст новости"></textarea>
+				<textarea type="text" name="inputNews" class="placeholderNews" placeholder="Введите текст новости" required></textarea>
 				<p class="countSymbols">Символов: <span id="counter">150</span>/<span id="maxSymbols">150</span></p>
 				<div class="inputImg">
 					<img src="images/ShapeimgIco.svg" alt="not img" class="imgNews">
@@ -53,7 +53,10 @@
 						<img src="images/Shape.svg" alt="close" class="imgClose">
 					</div>
 				</div>
-				<a class="addNewsBtn" href="#300">Применить</a>
+
+
+				<button class="addNewsBtn" type="submit">Применить</button>
+				<!-- <a class="addNewsBtn" href="#300">Применить</a> -->
 			</form>
 		</main>
 
@@ -66,17 +69,20 @@
 					</p>
 				</section>
 				<div class="footerInfo">
-					<section class="infoOfCompany">
-						<a href="#1" >О компании</a> 
-						<br><a href="#2" >Вакансии </a>
-						<br><a href="#3" >Клиенту</a> 
-						<br><a href="#4" >Франчайзинг</a>
-					</section>
-					<section class="infoOfCompany">
-						<a href="#5" >Доставка из Китая</a> 
-						<br><a href="#6" >Все услуги</a> 
-						<br><a href="#7" >Акции</a>
-					</section>
+
+				<div class="lists_links">
+						<section class="infoOfCompany">
+							<a class="link" href>О компании</a> 
+							<br><a class="link" href>Вакансии </a>
+							<br><a class="link" href>Клиенту</a> 
+							<br><a class="link" href>Франчайзинг</a>
+						</section>
+						<section class="infoOfCompany">
+							<a class="link" href>Доставка из Китая</a> 
+							<br><a class="link" href>Все услуги</a> 
+							<br><a class="link" href>Акции</a>
+						</section>
+					</div>
 					<section class="vcard">
 						<ul >
 							<li class="emailComp">manager@uexpress.ru</li> 

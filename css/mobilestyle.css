@@ -1,4 +1,4 @@
-@media (max-width: 768px){
+@media screen and (max-width: 768px) {
 	.phone{
 		position: absolute;
 		display:inline-block;
@@ -49,7 +49,7 @@
 	}
 
 	.vcard {
-		margin-top: 90px;
+		    margin-top: 50px;
 		margin-left: 220px;
 		float: left;
 	}
@@ -57,10 +57,14 @@
 	.vcard ul {
 		margin: 0px;
 	}
+
+	.signIn {
+		padding: 10px 175px;
+	}
 }
 
 
-@media (max-width: 425px){
+@media screen and (max-width: 425px) {
 
 	.top__text-color {
 		padding: 50px 0 0 0;
@@ -139,7 +143,7 @@
 	}
 
 	.signIn{
-		padding: 15px 148px;
+		padding: 15px 157px;
 	}
 
 	.title-main {
@@ -158,7 +162,7 @@
 	/*footer*/
 
 	.infoOfCompany {
-		margin-top: 60px;
+		margin-top: 50px;
 	}
 
 	.vcard {

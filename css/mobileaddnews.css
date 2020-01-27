@@ -1,4 +1,4 @@
-@media (max-width: 768px){
+@media screen and (max-width: 768px) {
 	.courier{
 		opacity: 0;
 		position: absolute;
@@ -30,7 +30,7 @@
 	/*footer*/
 
 	#footer {
-		height: 700px;
+		height: 500px;
 	}
 
 	.footerIMG {
@@ -41,7 +41,7 @@
 	}
 
 	.vcard {
-		margin-top: 90px;
+		margin-top: 50px;
 		margin-left: 220px;
 		float: left;
 	}
@@ -51,7 +51,7 @@
 	}
 }
 
-@media (max-width: 425px){
+@media screen and (max-width: 425px) {
 
 	.phone{
 		opacity:0;
@@ -80,6 +80,10 @@
 		font-size: 15px;
 	}
 
+	.addNewsBtn {
+		font-size: 15px;
+	}
+
 	.placeholderNews{
 		width: 90%;
 	}
@@ -101,12 +105,11 @@
 
 	.inputImg{
 		display: block;
-
 	}
 	/*footer*/
 
 	.infoOfCompany {
-		margin-top: 60px;
+		margin-top: 50px;
 	}
 
 	.vcard {
